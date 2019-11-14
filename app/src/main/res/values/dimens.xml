@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="TitleSize">16sp</dimen>
+    <dimen name="ProfileDetailsIconSize">24dp</dimen>
+    <dimen name="ProfileImageSize">96dp</dimen>
+    <dimen name="DetailsProfileImageSize">192dp</dimen>
+</resources>

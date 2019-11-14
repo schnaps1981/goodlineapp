@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.ActivitySearch">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/tbToolbar"
+    />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/strUserSearchRefreshContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tbToolbar">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvUsersSearchResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvUsersSearchNothingFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/nothing_found"
+        android:textSize="@dimen/TitleSize"
+        android:visibility="gone"
+        />
+</RelativeLayout>

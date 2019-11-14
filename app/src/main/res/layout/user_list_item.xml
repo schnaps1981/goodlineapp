@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlUserInfo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="4dp"
+        app:contentPadding="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivProfileImage"
+                android:layout_width="@dimen/ProfileImageSize"
+                android:layout_height="@dimen/ProfileImageSize"
+                android:src="@mipmap/ic_launcher"
+                app:civ_border_color="@color/ImageBorderColor"
+                app:civ_border_width="2dp" />
+
+            <ProgressBar
+                android:id="@+id/pbProfileLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/ivProfileImage"
+                android:layout_alignEnd="@id/ivProfileImage"
+                android:layout_alignTop="@id/ivProfileImage"
+                android:layout_alignBottom="@id/ivProfileImage"
+                android:elevation="6dp"
+                android:visibility="visible"/>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/ivProfileImage"
+                android:text="Name"
+                android:textSize="@dimen/TitleSize" />
+
+            <ImageView
+                android:id="@+id/ivProfileDetails"
+                android:layout_width="@dimen/ProfileDetailsIconSize"
+                android:layout_height="@dimen/ProfileDetailsIconSize"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/icon_profile_details" />
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GoodLineApp</string>
+    <string name="hint">hint</string>
+    <integer name="com_vk_sdk_AppId">7200713</integer>
+
+    <string name="search_hint">Введите запрос</string>
+    <string name="network_error">Ошибка при загрузке</string>
+    <string name="retry">Повторить</string>
+    <string name="LoginButtonText">Войти</string>
+    <string name="MessageErrorLogin">Ошибка логина</string>
+    <string name="nothing_found">Ничего не найдено</string>
+    <string name="details_name">Имя</string>
+    <string name="details_surname">Фамилия</string>
+    <string name="details_screenname">Screenname</string>
+    <string name="details_sex">Пол</string>
+    <string name="details_family_relation">Семейное положение</string>
+    <string name="btn_text_friends">Друзья</string>
+    <string name="friends">Друзья</string>
+    <string name="no_more_data">Нет больше данных</string>
+    <string name="about_me">Обо мне</string>
+    <string name="error_loading">Ошибка загрузки</string>
+</resources>
